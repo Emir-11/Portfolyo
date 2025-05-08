@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emirhan Tükenmez - Portfolyo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        .background-image {
+            position: fixed;
+            top: 0;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.15;
+        }
+        
+        .left-image {
+            left: 0;
+        }
+        
+        .right-image {
+            right: 0;
+        }
+        
+        header {
+            background-color: #e60000;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .profession {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+        }
+        
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-left: 4px solid #e60000;
+        }
+        
+        h2 {
+            color: #e60000;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #f1f1f1;
+            padding-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .contact-item {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .contact-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #e60000;
+        }
+        
+        .contact-item p {
+            font-size: 1.1rem;
+        }
+        
+        .contact-item a {
+            color: #e60000;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-item a:hover {
+            color: darkred;
+            text-decoration: underline;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .skill {
+            background-color: #f1f1f1;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #333;
+            border: 1px solid #e1e1e1;
+        }
+        
+        footer {
+            background-color: #e60000;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Arka plan görselleri -->
+    <img src="/api/placeholder/400/800" alt="Jeff Bezos" class="background-image left-image">
+    <img src="/api/placeholder/400/800" alt="Mark Zuckerberg" class="background-image right-image">
+    
+    <header>
+        <div class="header-content">
+            <h1>Emirhan Tükenmez</h1>
+            <p class="profession">Bilişim Mühendisi</p>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <section class="section">
+            <h2>Hakkımda</h2>
+            <p>Merhaba! Ben Emirhan Tükenmez, bilişim mühendisiyim. Teknoloji ve yazılım geliştirme alanında çalışmaktan keyif alıyorum. Modern web teknolojilerini kullanarak yenilikçi çözümler üretmeye odaklanıyorum.</p>
+        </section>
+        
+        <section class="section">
+            <h2>İletişim Bilgileri</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/Emir-11" target="_blank">github.com/Emir-11</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>Telefon</h3>
+                    <p>+90 XXX XXX XX XX</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>E-posta</h3>
+                    <p><a href="mailto:ornek@gmail.com">ornek@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Yetenekler</h2>
+            <div class="skills-container">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">React</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Python</span>
+                <span class="skill">C/C++</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Git</span>
+                <span class="skill">Responsive Design</span>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Projeler</h2>
+            <p>GitHub profilimde bulunan projeleri inceleyebilirsiniz: <a href="https://github.com/Emir-11" target="_blank">github.com/Emir-11</a></p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Emirhan Tükenmez - Tüm Hakları Saklıdır</p>
+    </footer>
+</body>
+</html>
